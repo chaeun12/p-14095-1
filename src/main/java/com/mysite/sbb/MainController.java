@@ -15,6 +15,7 @@ public class MainController {
     }
 
     @GetMapping("/hello")
+    @ResponseBody
     public String hello() {
         System.out.println("hello() 메서드 호출됨!");
         return " 안녕하세요";
